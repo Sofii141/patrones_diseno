@@ -11,11 +11,11 @@ public class TechnicalEvaluator extends ProjectEvaluator{
 
     @Override
     protected void makeDecision(Project project){
-        System.out.println("Project approved...");
+        System.out.println("Technical Project approved...");
     }
 
     @Override
     protected void validateRequirements(Project project){
-        System.out.println("Validating requirements...");
+        System.out.println("Technical Validating requirements...");
     }
 }

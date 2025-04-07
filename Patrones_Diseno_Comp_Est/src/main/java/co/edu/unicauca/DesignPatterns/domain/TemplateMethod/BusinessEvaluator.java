@@ -11,7 +11,7 @@ public class BusinessEvaluator extends ProjectEvaluator{
 
     @Override
     protected void makeDecision(Project project){
-        System.out.println("Project approved based on business analysis...");
+        System.out.println("Business Project approved based on business analysis...");
     }
 
     @Override
