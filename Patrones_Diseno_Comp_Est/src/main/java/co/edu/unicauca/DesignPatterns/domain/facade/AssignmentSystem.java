@@ -4,7 +4,8 @@ import co.edu.unicauca.DesignPatterns.domain.entities.Project;
 
 public class AssignmentSystem {
     public boolean assign(Project project) {
-        System.out.println("Project successfully managed and assigned.");
-        return true;
+        System.out.println("Assigning project to a student: " + project.getProjectTitle());
+        return Math.random() > 0.2; // 80% probabilidad de asignar
     }
 }
+

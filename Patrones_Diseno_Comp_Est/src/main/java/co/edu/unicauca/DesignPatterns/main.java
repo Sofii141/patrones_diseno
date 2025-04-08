@@ -7,6 +7,7 @@ import co.edu.unicauca.DesignPatterns.domain.adapter.ExternalProjectService;
 import co.edu.unicauca.DesignPatterns.domain.adapter.ProjectAdapter;
 import co.edu.unicauca.DesignPatterns.domain.adapter.ProjectDataProvider;
 import co.edu.unicauca.DesignPatterns.domain.entities.Project;
+import co.edu.unicauca.DesignPatterns.domain.facade.PlatformFacade;
 
 public class main {
     //Patrón Template Method
@@ -50,6 +51,9 @@ public class main {
         System.out.println("Project created from external service: " + adaptedProject.getProjectTitle());
 
         //FACADE
+        System.out.println("FACADE PATTERN");
+        PlatformFacade platform = new PlatformFacade();
+        platform.manageProject(project);
 
     }
 }

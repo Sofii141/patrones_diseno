@@ -8,12 +8,15 @@ import co.edu.unicauca.DesignPatterns.domain.entities.Project;
  * estudiantes).
  */
 public class PlatformFacade {
+
     private EvaluationSystem evaluation;
     private AssignmentSystem assignment;
+
     public PlatformFacade() {
         this.evaluation = new EvaluationSystem();
         this.assignment = new AssignmentSystem();
     }
+
     public void manageProject(Project project) {
         if (evaluation.evaluate(project)) {
             if (assignment.assign(project)) {
